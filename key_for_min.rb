@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   minKey = nil
-  minVal = 9999999999
+  minVal = 2 ** (64 - 2) - 1
   name_hash.each {|key, value|
     if value < minVal
       minVal = value
